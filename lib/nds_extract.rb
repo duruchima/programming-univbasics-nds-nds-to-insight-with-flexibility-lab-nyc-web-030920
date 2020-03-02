@@ -107,6 +107,7 @@ def movies_with_directors_set(source)
    a_o_a_movies_with_director_names << movies_with_director_key(director_name, directors_movies)
    index += 1
  end
+ flatten_a_o_a(a_o_a_movies_with_director_names)
  a_o_a_movies_with_director_names
 end
 
