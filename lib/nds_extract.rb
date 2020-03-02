@@ -80,7 +80,9 @@ def gross_per_studio(collection)
     studios=collection[index]
     total[studios[:studio]] = studios[:worldwide_gross]
     index+=1
-  end
+    if !total[studios]
+      puts "We should collect the totals of films made by this #{studios}"
+    end
   total
 end
 
