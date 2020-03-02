@@ -74,6 +74,7 @@ def gross_per_studio(collection)
   collection{}
   index=0
   movie_data = collection[index]
+  name= collection[:director_name]
   while index < movies_collection.length do
     collection << movie_with_director_name(name, movie_data)
     index+=1
